@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ABOUT US</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>BlogApp</title>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/about.css">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	</head>
   <body>
 <!-- Navbar section starts here -->
-    <section class="navbar">
-      <div class="header">
-        <ul>
-          <li>
-            <a class="item"> <i class="code big icon"></i>CodeBlogs </a>
-          </li>
-          <!-- For aligning navbar elements to the right -->
-          <div class="navElements">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li>
-              <div class="ui icon input">
-                <input type="text" placeholder="Search..." />
-                <i class="search link icon"></i>
-              </div>
-            </li>
-          </div>
-        </ul>
-      </div>
-    </section>
+<section class="navbar" >
+  <div class="header">
+  <ul>
+    <li>
+      <a class="item">
+          <i class="code big icon"></i>CodeBlogs
+      </a>
+    </li>
+    <!-- For aligning navbar elements to the right -->
+  <div class="dropdown">
+    <div class="navElements" id="nav">	
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li>
+        <div class="ui icon input">
+              <input type="text" placeholder="Search...">
+              <i class="search link icon"></i>
+            </div>
+        </li>
+      </div>	
+      <button class="btn" onclick="myFunction()">&#9776</button>
+  </div>
+</div>
+</section>
 <!-- Navbar sections ends here -->
-<!--about section starts here-->
+<!-- section starts here-->
+<div class="content">
+  <div class="banner">
+    <img class="profile_image" src="profile_image\Screenshot (2).png" />
+  </div>
+  <div class="banner">
+    <h1>heroine</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptatum placeat numquam est non impedit labore, quas sint architecto alias?
+    </p>
+  </div>
     <div class="content_wrapper">
       <!--   To make a grid   -->
       <div class="grid_coloumn_wrapper">
@@ -58,9 +57,7 @@
         <div class="about">
           <h1>heroine</h1>
           <p>
-            jahdsfuhaf askdfhfsfhiahfk asfdhb ah asbdhfbksafih kJFAHUJ AKSJFDUIH
-            AKSDFHAIHFDKJSAH JHAFJFHIniufshdnsghislglidfdihglk kjfgghsfg
-            fgguishgsgf
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptatum placeat numquam est non impedit labore, quas sint architecto alias?
           </p>
         </div>
         <div class="about">
@@ -79,17 +76,12 @@
         </div>
         <div class="about">
             <h1>gunda</h1>
-            <p>jhadsfhygafdb hdhjasfkduh adhabkfuh 
-             akhfd hbjafhk 
-             a ahjkfdhjf hadjfhflab ldhjkafihlj
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi reprehenderit illum harum placeat exercitationem modi dolore a! Magni, obcaecati sapiente!
             </p>
        </div>
        <div class="about">
            <h1>ragnikaant</h1>
-           <p>dfsajhfyuafdbhc
-               adjfahdbhkadsc kkdbahdsfghac kkadhbjdfkf 
-               dchhbndchjbndmsc
-                hdasbdfhbjfdhjbdc
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia fugit eum nisi, hic iusto eius saepe. Officia repellat totam deleniti?
            </p>
        </div>
        <div class="image">
@@ -97,58 +89,57 @@
        </div>
       </div>
     </div>
+    </div>
 <!--about section ends here-->
 <!-- Footer starts here -->
-
-    <footer>
-      <div class="footer-container">
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="#">About Us</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Footer Social Media icons -->
-        <div class="footer-icons">
-          <h4>Follow us on</h4>
-          <div class="social-icons">
-            <a class="insta-icon" href="#">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-            <a class="facebook-icon" href="#">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a class="linkedin-icon" href="#">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        <!-- Footer contact us -->
-        <div class="footer-contact">
-          <h4>Contact Us</h4>
-          <div class="border"></div>
-          <ul>
-            <li>
-              <i class="fa fa-map-marker" aria-hidden="true"></i>Railway
-              Colony,Chakradharpur
-            </li>
-            <li><i class="fa fa-phone" aria-hidden="true"></i>123456789</li>
-            <li>
-              <i class="fa fa-envelope-o" aria-hidden="true"></i
-              >15smritikumari@gmail.com
-            </li>
-          </ul>
-        </div>
+		
+<footer>
+  <div class="footer-container">
+      <div class="footer-links">
+  <h4>Quick Links</h4>
+  <ul>
+      <li>
+          <a href="index.html">Home</a>
+      </li>
+      <li>
+          <a href="#">About Us</a>
+      </li>
+  </ul>
+  </div>
+  <!-- Footer Social Media icons -->
+  <div class="footer-icons">
+      <h4>Follow us on</h4>
+  <div class="social-icons">
+          <a class="insta-icon" href="#">
+              <i class="fa fa-instagram" style="color: #ae4663; margin: 5px;" aria-hidden="true"></i>
+          </a>
+          <a class="facebook-icon" href="#">
+              <i class="fa fa-facebook" style="color: #4068ae; margin: 5px;" aria-hidden="true"></i>
+          </a>
+          <a class="linkedin-icon" href="#">
+              <i class="fa fa-linkedin" style="color: #1671a7;margin: 5px;" aria-hidden="true"></i>
+          </a>          
       </div>
-      <br />
-      <!-- Footer copyright -->
-      <div class="footer-copyright">Copyright by Group L 2021</div>
-    </footer>
-    <!-- Footer ends here -->
+  </div>
+  <!-- Footer contact us -->
+  <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <div class= "border"></div>
+      <ul>
+          <li><i class="fa fa-map-marker" style="color: #f5090a;margin: 5px;" aria-hidden="true"></i>Railway Colony,Chakradharpur</li>
+          <li><i class="fa fa-phone" style="color: #068005;margin: 5px;" aria-hidden="true"></i>123456789</li>
+          <li><i class="fa fa-envelope-o" style="color: #e8d255 ;margin: 5px;" aria-hidden="true"></i>15smritikumari@gmail.com</li>
+      </ul>
+  </div>
+</div>
+<br>
+<!-- Footer copyright -->
+<div class="footer-copyright">
+  Copyright by Group L 2021
+</div>    
+</footer>
+<!-- Footer ends here -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/script.js"></script>
   </body>
 </html>

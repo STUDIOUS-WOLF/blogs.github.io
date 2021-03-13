@@ -24,7 +24,6 @@ body {
   flex-wrap: wrap;
 }
 
-
 .header ul li {
   display: inline-block;
 }
@@ -54,25 +53,31 @@ body {
   .btn {
     display: none;
   }
-  
-.navElements {
-  float: right;
-  margin-right: 8%;
-}
+
+  .navElements {
+    float: right;
+    margin-right: 8%;
+  }
+  .footer-icons .footer-links {
+    border-right: 3px;
+    border-color: whitesmoke;
+    position: absolute;
+  }
 }
 
 @media (max-width: 600px) {
   .navElements {
     display: none;
   }
+
   .btn {
     background-color: rgb(206, 200, 192);
     padding: 5px 15px;
     float: right;
-    margin-top: 25px;
     border-radius: 20px;
     border: none;
-    margin-right: 0px;
+    margin-left: 75px;
+    position: relative;
   }
   .btn:hover {
     background-color: hsl(44, 92%, 75%);
@@ -95,42 +100,6 @@ body {
   }
 }
 /*Navbar ends*/
-/*Banner*/
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-/*Banner ends*/
-
-/*Blogs list*/
-.content {
-  letter-spacing: 0.5px;
-  word-spacing: 2px;
-}
-
-.description p {
-  line-height: 1.1;
-}
-/*Blogs list ends*/
-
 /*Footer*/
 .footer-container {
   display: flex;
@@ -188,7 +157,7 @@ footer ul li {
     grid-template-rows: 30% 30% 30%;
   }
   .footer-icons .footer-links {
-    border-right: 1px solid whitesmoke;
+    border-right: 10px solid whitesmoke;
   }
   footer .footer-icons {
     text-align: center;
@@ -243,3 +212,38 @@ footer .footer-copyright {
 }
 /*Footer Ends*/
 
+/*            About container            */
+.content {
+  align-items: center;
+  margin: 0px 15px;
+}
+.banner {
+  background-color: #c0faf7;
+  padding: 3% 0px;
+}
+.content_wrapper {
+  align-content: center;
+  background-color: #c0faf7;
+  margin: none;
+}
+.grid_coloumn_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  grid-template-rows: 1fr 1fr;
+
+  justify-content: space-around;
+}
+.profile_image {
+  width: 100%;
+  height: auto;
+}
+.about {
+  padding: 3%;
+  font-size: small;
+}
+.image,
+.about {
+  padding-top: 5px;
+  align-items: center;
+}
+/*       about section ends here       */
